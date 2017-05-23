@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CATALOG>
-	<MUSIC>
-		<TITLE>อกหัก</TITLE>
-		<ARTIST>Bodyslam</ARTIST>
-		<ALBUM>Save My Life</ALBUM>
-		<YEAR>2550</YEAR>
+	<ARTIST>
+		<NAME>Bruno Mars</NAME>
+		<ALBUM>24k magic</ALBUM>
+		<YEAR>2016</YEAR>
+		<GENRE>R&B</GENRE>
 		<COMPANY>Music Bugs</COMPANY>
-		<SOUND>cove/bodyslamsound.mp3</SOUND>
-		<IMAGE>bodyslamalbum.jpg</IMAGE>
-	</MUSIC>
+		<SOUND1></SOUND1>
+		<SOUND2></SOUND2>
+		<SOUND3></SOUND3>		
+		<IMAGE></IMAGE>
+	</ARTIST>
 </CATALOG>
