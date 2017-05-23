@@ -120,12 +120,12 @@
 			<img id = "playbt" class = "parallax" src = "src/playbt.png" width = "15%">
 		</div>
 		<div id="s1">
-			<img id = "ne" class = "parallax" width = "13%">
-			<img id = "se" class = "parallax" width = "12%">
-			<img id = "e" class = "parallax" width = "18%">
-			<img id = "nw" class = "parallax" width = "13%">
-			<img id = "sw" class = "parallax" width = "12%">
-			<img id = "w" class = "parallax" width = "18%">
+			<img id = "ne" class = "parallax" width = "13%" style = "visibility: hidden">
+			<img id = "se" class = "parallax" width = "12%" style = "visibility: hidden">
+			<img id = "e" class = "parallax" width = "18%" style = "visibility: hidden">
+			<img id = "nw" class = "parallax" width = "13%" style = "visibility: hidden">
+			<img id = "sw" class = "parallax" width = "12%" style = "visibility: hidden">
+			<img id = "w" class = "parallax" width = "18%" style = "visibility: hidden">
 		</div>
 	</main>
 	<nav class = "navbar">
@@ -147,8 +147,42 @@
 			document.getElementById("se").src = "cover/" + cover[2];		
 			document.getElementById("nw").src = "cover/" + cover[3];
 			document.getElementById("w").src = "cover/" + cover[4];
-			document.getElementById("sw").src = "cover/" + cover[5];		
+			document.getElementById("sw").src = "cover/" + cover[5];	
+			timeShowCover();	
 		}
+		function timeShowCover(){
+			window.setTimeout( function(){
+				document.getElementById("ne").style.visibility = "visible";
+			} , 1000 );
+			window.setTimeout( function(){
+				document.getElementById("e").style.visibility = "visible";
+			} , 2000 );
+			window.setTimeout( function(){
+				document.getElementById("se").style.visibility = "visible";
+			} , 3000 );
+			window.setTimeout( function(){
+				document.getElementById("sw").style.visibility = "visible";
+			} , 4000 );
+			window.setTimeout( function(){
+				document.getElementById("w").style.visibility = "visible";
+			} , 5000 );
+			window.setTimeout( function(){
+				document.getElementById("nw").style.visibility = "visible";
+			} , 6000 );
+		}
+		/*position = ["ne","e","se","nw","w","sw"];
+		function animationShowCover(){
+			for( i=0; i<=50000000; i++ ){
+				var j = i%10000000;
+				var k = i/10000000;
+				if( j == 0 ){
+					console.log(position[k]);
+					document.getElementById(position[k]).style.visibility = "visible";
+				}
+				
+			}
+			
+		}*/
 		/*function headside(i){
 			switch(i){
 				case 0:
