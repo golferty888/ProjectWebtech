@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CATALOG>
+	<ARTIST>
+		<NAME>Bruno Mars</NAME>
+		<ALBUM>24k magic</ALBUM>
+		<YEAR>2016</YEAR>
+		<GENRE>R&B, soul</GENRE>
+		<LABELS>Atlantic</LABELS>
+		<SOUND1>track\bruno_mars\24K Magic.mp3</SOUND1>
+		<SOUND2>track\bruno_mars\That’s What I Like.mp3</SOUND2>
+		<SOUND3>track\bruno_mars\Versace on The Floor.mp3</SOUND3>		
+		<IMAGE></IMAGE>
+	</ARTIST>
+</CATALOG>
