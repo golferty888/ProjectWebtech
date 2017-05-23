@@ -78,18 +78,7 @@
 				// obj.style.top = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
 				//console.log(obj.style.left + "      " + obj.style.top);				
 			}
-			
-			/*var cover = [0,1,2,3,4,5];
-			random();
-			function random(){		
-				for (var i = 0.; i <= 5 ; i++) {
-					var randomCover = Math.floor((Math.random()*6 ));
-					var temp = cover[i]
-					cover[i] = cover[randomCover];
-					cover[randomCover] = temp;
-				};
-				console.log(cover);
-			}*/
+
 			cover = [
 				"coldplay1.jpg",
 				"divide_ed.jpg",
@@ -153,41 +142,29 @@
 			window.setTimeout( function(){
 				document.getElementById("ne").style.visibility = "visible";
 				document.getElementById("ne").style.animation = "showCv 2s"; 
-			} , 300 );
+			} , 200 );
 			window.setTimeout( function(){
 				document.getElementById("e").style.visibility = "visible";
 				document.getElementById("e").style.animation = "showCv 2s"; 
-			} , 600 );
+			} , 400 );
 			window.setTimeout( function(){
 				document.getElementById("se").style.visibility = "visible";
 				document.getElementById("se").style.animation = "showCv 2s"; 
-			} , 900 );
+			} , 600 );
 			window.setTimeout( function(){
 				document.getElementById("sw").style.visibility = "visible";
 				document.getElementById("sw").style.animation = "showCv 2s"; 
-			} , 1200 );
+			} , 800 );
 			window.setTimeout( function(){
 				document.getElementById("w").style.visibility = "visible";
 				document.getElementById("w").style.animation = "showCv 2s"; 
-			} , 1500 );
+			} , 1000 );
 			window.setTimeout( function(){
 				document.getElementById("nw").style.visibility = "visible";
 				document.getElementById("nw").style.animation = "showCv 2s"; 
-			} , 1800 );
+			} , 1200 );
 		}
-		/*position = ["ne","e","se","nw","w","sw"];
-		function animationShowCover(){
-			for( i=0; i<=50000000; i++ ){
-				var j = i%10000000;
-				var k = i/10000000;
-				if( j == 0 ){
-					console.log(position[k]);
-					document.getElementById(position[k]).style.visibility = "visible";
-				}
-				
-			}
-			
-		}*/
+		
 		/*function headside(i){
 			switch(i){
 				case 0:
