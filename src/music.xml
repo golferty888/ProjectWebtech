@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CATALOG>
+	<MUSIC>
+		<TITLE>อกหัก</TITLE>
+		<ARTIST>Bodyslam</ARTIST>
+		<ALBUM>Save My Life</ALBUM>
+		<YEAR>2550</YEAR>
+		<COMPANY>Music Bugs</COMPANY>
+		<SOUND>cove/bodyslamsound.mp3</SOUND>
+		<IMAGE>bodyslamalbum.jpg</IMAGE>
+	</MUSIC>
+</CATALOG>
