@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Music - Banana</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main id = "main">
+		<div id="l2">
+			<img id = "bg" class = "parallax" src = "src/bg5.jpg" >
+		</div>
+		<div id="l1">
+			<img id = "playbt" class = "parallax" src = "src/playbt2.png" >
+		</div>
+		<div id="s1">
+			<img id = "ne" class = "parallax" src = "cover/coldplay.gif" width = "300px">
+			<img id = "se" class = "parallax" src = "cover/twentyonepilots.jpg" width = "300px">
+			<img id = "e" class = "parallax" src = "cover/bodyslam.jpg" width = "350x">
+
+			<img id = "nw" class = "parallax" src = "cover/room39.jpg" width = "300x">
+			<img id = "sw" class = "parallax" src = "cover/katyperry.jpg" width = "300x">
+			<img id = "w" class = "parallax" src = "cover/imaginedragon.jpg" width = "350x">
+		</div>
+	</div>
+	</main>
+	<nav class = "navbar">
+		<div class = "headbar">
+			<ul>
+				<span id = "banana"><li>banana</li></span>
+				<span id = "icon"><li id = "icon" onMouseOver = "headside(0)"><img src="src/banana.png"></li></span>
+				<li onMouseOver = "headside(1)">Music</li>
+				<span id = "minion"><li onMouseOver = "headside(2)">Minion!</li></span>
+				<li onMouseOver = "headside(3)">about Us</li>
+				<li onMouseOver = "headside(4)">contact</li>	
+			</ul>			
+		</div>
+	</nav>
+
+		
+		
+	<script>
+		/*function headside(i){
+			switch(i){
+				case 0:
+					document.getElementById("icon").innerHTML = '<li id = "icon"><img src="src/banana4.png"></li>';
+					window.setTimeout( function(){ change(0); } , 3000 );
+					playSound(0);
+					break;
+				case 1: 
+					alert("Bello!");
+					break;
+				case 2: 
+					document.getElementById("minion").innerHTML = '<li style = "color:lightgrey" >Minion!</li>';
+					window.setTimeout( function(){ change(1); } , 3000 );
+					playSound(1);
+					break;
+				case 3: alert("59130500073\n59130500100\n59130500128\n59130500133\n59130500136\n59130500139");break;
+				case 4: alert("Tanapat Choochot");break;
+			}
+		}
+		function playSound(j){
+			switch(j){
+				case 0:
+					var audio = new Audio('src/bababa.mp3');
+					audio.volume= .3;
+					audio.play();
+					break;
+				case 1: 
+					var audio = new Audio('src/lalo.mp3');
+					audio.volume= .1;
+					audio.play();
+					break;
+				}
+		}
+		function change(i){
+			switch(i){
+				case 0:
+					document.getElementById("icon").innerHTML = '<li id = "icon" onMouseOver = "headside(0)"><img src="src/banana.png"></li>';
+					break;
+				case 1:
+					document.getElementById("minion").innerHTML = '<li onMouseOver = "headside(2)" >Minion!</li>';
+					break;
+			}
+		}*/
+		//////////////////////////////////////////////
+		window.onload = function () {
+			//console.log("kaw");
+			var parallax = document.getElementById("main");
+			var playL = document.getElementById( 'l1' ).offsetLeft,
+				playT = document.getElementById( 'l1' ).offsetTop,
+				bgL = document.getElementById( 'l2' ).offsetLeft,
+				bgT = document.getElementById( 'l2' ).offsetTop,
+				neL = document.getElementById( 'ne' ).offsetLeft,
+				neT = document.getElementById( 'ne' ).offsetTop,
+				eL = document.getElementById( 'e' ).offsetLeft,
+				eT = document.getElementById( 'e' ).offsetTop;
+				seL = document.getElementById( 'se' ).offsetLeft,
+				seT = document.getElementById( 'se' ).offsetTop,
+				nwL = document.getElementById( 'nw' ).offsetLeft,
+				nwT = document.getElementById( 'nw' ).offsetTop,
+				wL = document.getElementById( 'w' ).offsetLeft,
+				wT = document.getElementById( 'w' ).offsetTop,
+				swL = document.getElementById( 'sw' ).offsetLeft,
+				swT = document.getElementById( 'sw' ).offsetTop;
+			//console.log(playL + "      " + playT);
+			parallax.onmousemove = function ( event ) {
+				//console.log("onmousemove");
+				event = event || window.event;
+				var x = event.clientX - parallax.offsetLeft,
+					y = event.clientY - parallax.offsetTop;
+
+				mouseParallax( 'playbt', playL, playT, x, y, 10 );
+				mouseParallax( 'bg', bgL, bgT, x, y, 2 );
+				mouseParallax( 'ne', neL, neT, x, y, 5 );
+				mouseParallax( 'e', eL, eT, x, y, 10 );
+				mouseParallax( 'se', seL, seT, x, y, 5 );
+				mouseParallax( 'nw', nwL, nwT, x, y, 5 );
+				mouseParallax( 'w', wL, wT, x, y, 10 );
+				mouseParallax( 'sw', swL, swT, x, y, 5 );
+			}
+
+			function mouseParallax ( id, left, top, mouseX, mouseY, speed ){
+				
+				//console.log("mouseParallax");
+				var obj = document.getElementById(id);
+				//console.log(obj);
+
+				var parentObj = obj.parentNode,
+				containerWidth = parseInt( parentObj.offsetWidth ),
+				containerHeight = parseInt( parentObj.offsetHeight );
+
+				// containerHeight=parseInt(getHeight(obj));
+				// containerWidth=parseInt(getW(obj));
+
+
+				containerHeight=obj.clientWidth;
+				containerWidth=obj.clientHeight;
+
+				//console.log("conW = "+containerWidth+"\nConH = "+containerHeight);
+				obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetHeight ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+				//containerHeight = 1200;
+				obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
+				
+
+				// obj.style.top = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+
+				//console.log(obj.style.left + "      " + obj.style.top);
+				
+						}
+		}
+		///////////////////////////////////////////////
+		function getHeight(element)
+		{
+		    element.style.visibility = "hidden";
+		    document.body.appendChild(element);
+		    var height = element.offsetHeight + 0;
+		    document.body.removeChild(element);
+		    element.style.visibility = "visible";
+		    return height;
+		}
+		function getW(element)
+		{
+		    element.style.visibility = "hidden";
+		    document.body.appendChild(element);
+		    var w = element.offsetWidth + 0;
+		    document.body.removeChild(element);
+		    element.style.visibility = "visible";
+		    return w;
+		}
+	</script>
+</body>
+</html>
