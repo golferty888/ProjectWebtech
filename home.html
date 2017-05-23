@@ -4,32 +4,36 @@
 	<meta charset = "UTF-8">
 	<title>Music - Banana</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Banana music">
+	<meta name="keywords" content="music, play, ajax, XML, JavaScript,INT107,Web tect">
+	<meta name="author" content="SIT INT107">
+	<link rel="icon" type="image/x-icon" href="src/iconapple.jpg">
 </head>
 <body>
 	<main id = "main">
 		<div id="l2">
-			<img id = "bg" class = "parallax" src = "src/bg5.jpg" >
+			<img id = "bg" class = "parallax" src = "src/bg5.jpg" width = "100%" >
 		</div>
 		<div id="l1">
-			<img id = "playbt" class = "parallax" src = "src/playbt2.png" >
+			<img id = "playbt" class = "parallax" src = "src/playbt.png" width = "15%">
 		</div>
 		<div id="s1">
-			<img id = "ne" class = "parallax" src = "cover/coldplay.gif" width = "300px">
-			<img id = "se" class = "parallax" src = "cover/twentyonepilots.jpg" width = "300px">
-			<img id = "e" class = "parallax" src = "cover/bodyslam.jpg" width = "350x">
+			<img id = "ne" class = "parallax" src = "cover/coldplay.gif" width = "13%">
+			<img id = "se" class = "parallax" src = "cover/twentyonepilots.jpg" width = "10%">
+			<img id = "e" class = "parallax" src = "cover/bodyslam.jpg" width = "18%">
 
-			<img id = "nw" class = "parallax" src = "cover/room39.jpg" width = "300x">
-			<img id = "sw" class = "parallax" src = "cover/katyperry.jpg" width = "300x">
-			<img id = "w" class = "parallax" src = "cover/imaginedragon.jpg" width = "350x">
+			<img id = "nw" class = "parallax" src = "cover/room39.jpg" width = "13%">
+			<img id = "sw" class = "parallax" src = "cover/katyperry.jpg" width = "10%">
+			<img id = "w" class = "parallax" src = "cover/imaginedragon.jpg" width = "18%">
 		</div>
-	</div>
 	</main>
 	<nav class = "navbar">
 		<div class = "headbar">
 			<ul>
 				<span id = "banana"><li>banana</li></span>
 				<span id = "icon"><li id = "icon" onMouseOver = "headside(0)"><img src="src/banana.png"></li></span>
-				<li onMouseOver = "headside(1)">Music</li>
+				<li onMouseOver = "headside(1)" >Music</li>
 				<span id = "minion"><li onMouseOver = "headside(2)">Minion!</li></span>
 				<li onMouseOver = "headside(3)">about Us</li>
 				<li onMouseOver = "headside(4)">contact</li>	
@@ -110,12 +114,12 @@
 				var x = event.clientX - parallax.offsetLeft,
 					y = event.clientY - parallax.offsetTop;
 
-				mouseParallax( 'playbt', playL, playT, x, y, 0 );
-				mouseParallax( 'bg', bgL, bgT, x, y, 2 );
-				mouseParallax( 'ne', neL, neT, x, y, 5 );
+				//mouseParallax( 'playbt', playL, playT, x, y, 0 );
+				mouseParallax( 'bg', bgL, bgT, x, y, 0 );
+				mouseParallax( 'ne', neL, neT, x, y, 2 );
 				mouseParallax( 'e', eL, eT, x, y, 10 );
 				mouseParallax( 'se', seL, seT, x, y, 5 );
-				mouseParallax( 'nw', nwL, nwT, x, y, 5 );
+				mouseParallax( 'nw', nwL, nwT, x, y, 2 );
 				mouseParallax( 'w', wL, wT, x, y, 10 );
 				mouseParallax( 'sw', swL, swT, x, y, 5 );
 			}
