@@ -10,20 +10,9 @@
 	<meta name="author" content="SIT INT107">
 	<link type="image/x-icon" href="src/iconapple.jpg">
 </head>
-<body onload = "parallax()">
+<body>
 	<script>
-	var x,xmlhttp,xmlDoc;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "src/music.xml", false);
-	xmlhttp.send();
-	xmlDoc = xmlhttp.responseXML; 
-	x = xmlDoc.getElementsByTagName("ARTIST");
-	test = "";
-	for (i = 0; i <x.length; i++) { 
-	  test += x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue + "\n";
-	}
-	console.log(test);
-		function parallax() {
+		window.onload = function () {
 			//console.log("kaw");
 			var parallax = document.getElementById("main");
 			var playL = document.getElementById( 'l1' ).offsetLeft,
@@ -108,6 +97,18 @@
 				console.log(cover);
 			}
 			showCover();
+			////////------------XML-----------------///////////////////
+			var x,xmlhttp,xmlDoc
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.open("GET", "src/music.xml", false);
+			xmlhttp.send();
+			xmlDoc = xmlhttp.responseXML; 
+			x = xmlDoc.getElementsByTagName("ARTIST");			
+			img1 = x[0].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue;	
+			img2 = x[1].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue;		
+			document.getElementById("nw").src = img1;
+			document.getElementById("ne").src = img2;
+			////////------------XML-----------------///////////////////
 		}
 
 	</script>
@@ -152,22 +153,28 @@
 		function timeShowCover(){
 			window.setTimeout( function(){
 				document.getElementById("ne").style.visibility = "visible";
-			} , 1000 );
+				document.getElementById("ne").style.animation = "showCv 2s"; 
+			} , 300 );
 			window.setTimeout( function(){
 				document.getElementById("e").style.visibility = "visible";
-			} , 2000 );
+				document.getElementById("e").style.animation = "showCv 2s"; 
+			} , 600 );
 			window.setTimeout( function(){
 				document.getElementById("se").style.visibility = "visible";
-			} , 3000 );
+				document.getElementById("se").style.animation = "showCv 2s"; 
+			} , 900 );
 			window.setTimeout( function(){
 				document.getElementById("sw").style.visibility = "visible";
-			} , 4000 );
+				document.getElementById("sw").style.animation = "showCv 2s"; 
+			} , 1200 );
 			window.setTimeout( function(){
 				document.getElementById("w").style.visibility = "visible";
-			} , 5000 );
+				document.getElementById("w").style.animation = "showCv 2s"; 
+			} , 1500 );
 			window.setTimeout( function(){
 				document.getElementById("nw").style.visibility = "visible";
-			} , 6000 );
+				document.getElementById("nw").style.animation = "showCv 2s"; 
+			} , 1800 );
 		}
 		/*position = ["ne","e","se","nw","w","sw"];
 		function animationShowCover(){
