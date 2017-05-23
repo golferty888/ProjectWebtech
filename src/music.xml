@@ -8,9 +8,7 @@
 		<LABELS>Atlantic</LABELS>
 		<SOUND1>track\bruno_mars\24K Magic.mp3</SOUND1>
 		<SOUND2>track\bruno_mars\That’s What I Like.mp3</SOUND2>
-		<SOUND3>track\bruno_mars\Versace on The Floor.mp3</SOUND3>		
-		<IMAGE1>cover\bruno.jpg</IMAGE1>			
-		<IMAGE2>cover\brunomar.jpg</IMAGE2>
+		<SOUND3>track\bruno_mars\Versace on The Floor.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
 		<NAME>Twenty One Pilots</NAME>
@@ -18,20 +16,48 @@
 		<YEAR>2015</YEAR>
 		<GENRE>Alternative hip hop, Electropop, Hip hop, Indie pop, Pop, Reggae, Rock</GENRE>
 		<LABELS>Fueled by Ramen</LABELS>
-		<SOUND1>track\
-		<SOUND2>track\</SOUND2>
-		<SOUND3>track\</SOUND3>	
-		<IMAGE1>cover\twentyonepilots.jpg</IMAGE1>
+		<SOUND1>track\twenty one pilots\Heavydirtysoul.mp3</SOUND1>
+		<SOUND2>track\twenty one pilots\Ride.mp3</SOUND2>
+		<SOUND3>track\twenty one pilots\Stressed Out.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>The Chainsmokers</NAME>
-		<ALBUM>Memories...Do Not Open</ALBUM>
+		<NAME>Ed Sheeran</NAME>
+		<ALBUM>Divide</ALBUM>
 		<YEAR>2017</YEAR>
 		<GENRE>Pop</GENRE>
-		<LABELS>Disruptor, Columbia</LABELS>
-		<SOUND1>track\chainsmokers\Closer ft. Halsey.mp3</SOUND1>
-		<SOUND2>track\chainsmokers\Paris.mp3</SOUND2>
-		<SOUND3>track\chainsmokers\Something Just Like This ft. Coldplay.mp3</SOUND3>	
-		<IMAGE1>album_cover\coldplay_mylo_xyloto.jpg</IMAGE1>
+		<LABELS>Asylum, Atlantic</LABELS>
+		<SOUND1>track\ed sheeran\Castle On The Hill.mp3</SOUND1>
+		<SOUND2>track\ed sheeran\Perfect.mp3</SOUND2>
+		<SOUND3>track\ed sheeran\Shape Of You.mp3</SOUND3>
+	</ARTIST>
+	<ARTIST>
+		<NAME>Coldplay</NAME>
+		<ALBUM>Mylo Xyloto</ALBUM>
+		<YEAR>2011</YEAR>
+		<GENRE>Pop, Pop rock, R and B, Electronica</GENRE>
+		<LABELS>Parlophone, Capitol</LABELS>
+		<SOUND1>track\coldplay\Charlie Brown.mp3</SOUND1>
+		<SOUND2>track\coldplay\Paradise.mp3</SOUND2>
+		<SOUND3>track\coldplay\Princess Of China ft. Rihanna.mp3</SOUND3>
+	</ARTIST>
+	<ARTIST>
+		<NAME>Katy Perry</NAME>
+		<ALBUM>Witness</ALBUM>
+		<YEAR>2017</YEAR>
+		<GENRE>Pop, Rock</GENRE>
+		<LABELS>Capitol</LABELS>
+		<SOUND1>track\katy_perry\Bon Appétit (Visualizer) ft. Migos.mp3</SOUND1>
+		<SOUND2>track\katy_perry\Chained To The Rhythm ft. Skip Marley.mp3</SOUND2>
+		<SOUND3>track\katy_perry\Swish ft.Nicki Minaj.mp3</SOUND3>
+	</ARTIST>
+	<ARTIST>
+		<NAME>Imagine Dragon</NAME>
+		<ALBUM>Night Visions</ALBUM>
+		<YEAR>2012</YEAR>
+		<GENRE>Pop, Rock, Alternative rock, Electronica</GENRE>
+		<LABELS>KIDinaKORNER, Interscope</LABELS>
+		<SOUND1>track\imaginedragon\Radioactive.mp3</SOUND1>
+		<SOUND2>track\imaginedragon\Demons.mp3</SOUND2>
+		<SOUND3>track\imaginedragon\It's Time.mp3</SOUND3>
 	</ARTIST>
 </CATALOG>
