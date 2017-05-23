@@ -55,6 +55,9 @@ body{
     max-width: 100%;
     height: auto;
 }
+#bg{
+    opacity: 0.4;
+}
 #playbt{
     top: 30%;
     left: 42.5%;
@@ -62,24 +65,41 @@ body{
 #ne{
     top: 15%;
     left: 70%;
+}#ne:hover{ 
+    opacity:0.6;
 }
 #e{
     top: 40%;
     left: 75%;
 }
+#e:hover{ 
+    opacity:0.6;
+}
 #se{
     top: 73%;
     left: 58%;
+}
+#se:hover{ 
+    opacity:0.6;
 }
 #nw{
     top: 12%;
     left: 18%;
 }
+#nw:hover{ 
+    opacity:0.6;
+}
 #w{
     top: 40%;
     left: 8%;
 }
+#w:hover{ 
+    opacity:0.6;
+}
 #sw{
     top: 73%;
     left: 35%;
+}
+#sw:hover{ 
+    opacity:0.6;
 }
