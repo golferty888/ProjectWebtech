@@ -80,12 +80,12 @@
 			}
 
 			cover = [
-				"coldplay1.jpg",
-				"divide_ed.jpg",
-				"bruno.jpg",
-				"twentyonepilots.jpg",
-				"katyperry.jpg",
-				"imaginedragon.jpg"];
+				"coldplay1",
+				"divide_ed",
+				"bruno",
+				"twentyonepilots",
+				"katyperry",
+				"imaginedragon"];
 			random();
 			function random(){		
 				for (var i = 0.; i <= 5 ; i++) {
@@ -130,12 +130,12 @@
 	</nav>	
 	<script>
 		function showCover(){
-			document.getElementById("ne").src = "cover/" + cover[0];
-			document.getElementById("e").src = "cover/" + cover[1];
-			document.getElementById("se").src = "cover/" + cover[2];		
-			document.getElementById("nw").src = "cover/" + cover[3];
-			document.getElementById("w").src = "cover/" + cover[4];
-			document.getElementById("sw").src = "cover/" + cover[5];	
+			document.getElementById("ne").src = "cover/" + cover[0] + ".jpg";
+			document.getElementById("e").src = "cover/" + cover[1] + ".jpg";
+			document.getElementById("se").src = "cover/" + cover[2] + ".jpg";		
+			document.getElementById("nw").src = "cover/" + cover[3] + ".jpg";
+			document.getElementById("w").src = "cover/" + cover[4] + ".jpg";
+			document.getElementById("sw").src = "cover/" + cover[5] + ".jpg";	
 			timeShowCover();	
 		}
 		function timeShowCover(){
@@ -143,28 +143,38 @@
 				document.getElementById("ne").style.visibility = "visible";
 				document.getElementById("ne").style.animation = "showCv 2s"; 
 			} , 200 );
+				document.getElementById("ne").setAttribute("onMouseOver", "showPlayBt(0)");
 			window.setTimeout( function(){
 				document.getElementById("e").style.visibility = "visible";
 				document.getElementById("e").style.animation = "showCv 2s"; 
 			} , 400 );
+				document.getElementById("e").setAttribute("onMouseOver", "showPlayBt(1)");
 			window.setTimeout( function(){
 				document.getElementById("se").style.visibility = "visible";
 				document.getElementById("se").style.animation = "showCv 2s"; 
 			} , 600 );
+				document.getElementById("se").setAttribute("onMouseOver", "showPlayBt(2)");
 			window.setTimeout( function(){
 				document.getElementById("sw").style.visibility = "visible";
 				document.getElementById("sw").style.animation = "showCv 2s"; 
 			} , 800 );
+				document.getElementById("sw").setAttribute("onMouseOver", "showPlayBt(3)");
 			window.setTimeout( function(){
 				document.getElementById("w").style.visibility = "visible";
 				document.getElementById("w").style.animation = "showCv 2s"; 
 			} , 1000 );
+				document.getElementById("w").setAttribute("onMouseOver", "showPlayBt(4)");
 			window.setTimeout( function(){
 				document.getElementById("nw").style.visibility = "visible";
 				document.getElementById("nw").style.animation = "showCv 2s"; 
 			} , 1200 );
+				document.getElementById("nw").setAttribute("onMouseOver", "showPlayBt(5)");
 		}
-		
+		function showPlayBt(o){
+			var audio = new Audio("track/" + cover[o] + ".mp3");
+				audio.volume= .6;
+				audio.play();
+		}
 		/*function headside(i){
 			switch(i){
 				case 0:
