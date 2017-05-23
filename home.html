@@ -2,13 +2,13 @@
 <html>
 <head>
 	<meta charset = "UTF-8">
-	<title>Music - Banana</title>
+	<title>Apple</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Banana music">
 	<meta name="keywords" content="music, play, ajax, XML, JavaScript,INT107,Web tect">
 	<meta name="author" content="SIT INT107">
-	<link rel="icon" type="image/x-icon" href="src/iconapple.jpg">
+	<link type="image/x-icon" href="src/iconapple.jpg">
 </head>
 <body>
 	<script>
@@ -53,28 +53,28 @@
 				//console.log("mouseParallax");
 				var obj = document.getElementById(id);
 				//console.log(obj);
-
 				var parentObj = obj.parentNode,
 				containerWidth = parseInt( parentObj.offsetWidth ),
 				containerHeight = parseInt( parentObj.offsetHeight );
-
 				// containerHeight=parseInt(getHeight(obj));
 				// containerWidth=parseInt(getW(obj));
-
-
 				containerHeight=obj.clientWidth;
 				containerWidth=obj.clientHeight;
-
 				//console.log("conW = "+containerWidth+"\nConH = "+containerHeight);
 				obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetHeight ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
 				//containerHeight = 1200;
 				obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
-				
-
 				// obj.style.top = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
-
-				//console.log(obj.style.left + "      " + obj.style.top);
-				
+				//console.log(obj.style.left + "      " + obj.style.top);				
+			}
+			var randomCover = Math.floor((Math.random()*6 )+1);
+			console.log(randomCover);
+			showCover(randomCover);
+			function showCover(l){
+				switch(l){
+					case 1:
+						console.log("ysegf");
+				}
 			}
 		}
 	</script>

@@ -89,11 +89,11 @@ body{
 #nw:hover{ 
     /*opacity:0.6;*/
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 @keyframes example {
     from { opacity: 1;}
-    to { opacity: 0.5;}
+    to { opacity: 0.1;}
 }
 #w{
     top: 40%;
