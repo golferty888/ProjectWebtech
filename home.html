@@ -2,44 +2,192 @@
 <html>
 <head>
 	<meta charset = "UTF-8">
-	<title>Music - Banana</title>
+	<title>Apple</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Banana music">
+	<meta name="keywords" content="music, play, ajax, XML, JavaScript,INT107,Web tect">
+	<meta name="author" content="SIT INT107">
+	<link type="image/x-icon" href="src/iconapple.jpg">
 </head>
-<body>
+<body onload = "parallax()">
+	<script>
+		var x,xmlhttp,xmlDoc; 
+		  xmlhttp = new XMLHttpRequest(); 
+		  xmlhttp.open("GET", "src/music.xml", false); 
+		  xmlhttp.send(); 
+		  xmlDoc = xmlhttp.responseXML;  
+		  x = xmlDoc.getElementsByTagName("ARTIST"); 
+		  test = ""; 
+		  for (i = 0; i <x.length; i++) {  
+		    test += x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue + "\n"; 
+		  } 
+		  console.log(test); 
+		function parallax() {
+			//console.log("kaw");
+			var parallax = document.getElementById("main");
+			var playL = document.getElementById( 'l1' ).offsetLeft,
+				playT = document.getElementById( 'l1' ).offsetTop,
+				bgL = document.getElementById( 'l2' ).offsetLeft,
+				bgT = document.getElementById( 'l2' ).offsetTop,
+				neL = document.getElementById( 'ne' ).offsetLeft,
+				neT = document.getElementById( 'ne' ).offsetTop,
+				eL = document.getElementById( 'e' ).offsetLeft,
+				eT = document.getElementById( 'e' ).offsetTop;
+				seL = document.getElementById( 'se' ).offsetLeft,
+				seT = document.getElementById( 'se' ).offsetTop,
+				nwL = document.getElementById( 'nw' ).offsetLeft,
+				nwT = document.getElementById( 'nw' ).offsetTop,
+				wL = document.getElementById( 'w' ).offsetLeft,
+				wT = document.getElementById( 'w' ).offsetTop,
+				swL = document.getElementById( 'sw' ).offsetLeft,
+				swT = document.getElementById( 'sw' ).offsetTop;
+			//console.log(playL + "      " + playT);
+			parallax.onmousemove = function ( event ) {
+				//console.log("onmousemove");
+				event = event || window.event;
+				var x = event.clientX - parallax.offsetLeft,
+					y = event.clientY - parallax.offsetTop;
+
+				//mouseParallax( 'playbt', playL, playT, x, y, 0 );
+				mouseParallax( 'bg', bgL, bgT, x, y, 0 );
+				mouseParallax( 'ne', neL, neT, x, y, 2 );
+				mouseParallax( 'e', eL, eT, x, y, 10 );
+				mouseParallax( 'se', seL, seT, x, y, 5 );
+				mouseParallax( 'nw', nwL, nwT, x, y, 2 );
+				mouseParallax( 'w', wL, wT, x, y, 10 );
+				mouseParallax( 'sw', swL, swT, x, y, 5 );
+			}
+
+			function mouseParallax ( id, left, top, mouseX, mouseY, speed ){
+				
+				//console.log("mouseParallax");
+				var obj = document.getElementById(id);
+				//console.log(obj);
+				var parentObj = obj.parentNode,
+				containerWidth = parseInt( parentObj.offsetWidth ),
+				containerHeight = parseInt( parentObj.offsetHeight );
+				// containerHeight=parseInt(getHeight(obj));
+				// containerWidth=parseInt(getW(obj));
+				containerHeight=obj.clientWidth;
+				containerWidth=obj.clientHeight;
+				//console.log("conW = "+containerWidth+"\nConH = "+containerHeight);
+				obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetHeight ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+				//containerHeight = 1200;
+				obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
+				// obj.style.top = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+				//console.log(obj.style.left + "      " + obj.style.top);				
+			}
+			
+			/*var cover = [0,1,2,3,4,5];
+			random();
+			function random(){		
+				for (var i = 0.; i <= 5 ; i++) {
+					var randomCover = Math.floor((Math.random()*6 ));
+					var temp = cover[i]
+					cover[i] = cover[randomCover];
+					cover[randomCover] = temp;
+				};
+				console.log(cover);
+			}*/
+			cover = [
+				"coldplay1.jpg",
+				"divide_ed.jpg",
+				"bruno.jpg",
+				"twentyonepilots.jpg",
+				"katyperry.jpg",
+				"imaginedragon.jpg"];
+			random();
+			function random(){		
+				for (var i = 0.; i <= 5 ; i++) {
+					var randomCover = Math.floor((Math.random()*6 ));
+					var temp = cover[i]
+					cover[i] = cover[randomCover];
+					cover[randomCover] = temp;
+				};
+				console.log(cover);
+			}
+			showCover();
+		}
+
+	</script>
 	<main id = "main">
 		<div id="l2">
-			<img id = "bg" class = "parallax" src = "src/bg5.jpg" >
+			<img id = "bg" class = "parallax" src = "src/bg5.jpg" width = "100%" >
 		</div>
 		<div id="l1">
-			<img id = "playbt" class = "parallax" src = "src/playbt2.png" >
+			<img id = "playbt" class = "parallax" src = "src/playbt.png" width = "15%">
 		</div>
 		<div id="s1">
-			<img id = "ne" class = "parallax" src = "cover/coldplay.gif" width = "300px">
-			<img id = "se" class = "parallax" src = "cover/twentyonepilots.jpg" width = "300px">
-			<img id = "e" class = "parallax" src = "cover/bodyslam.jpg" width = "350x">
-
-			<img id = "nw" class = "parallax" src = "cover/room39.jpg" width = "300x">
-			<img id = "sw" class = "parallax" src = "cover/katyperry.jpg" width = "300x">
-			<img id = "w" class = "parallax" src = "cover/imaginedragon.jpg" width = "350x">
+			<img id = "ne" class = "parallax" width = "13%" style = "visibility: hidden">
+			<img id = "se" class = "parallax" width = "12%" style = "visibility: hidden">
+			<img id = "e" class = "parallax" width = "18%" style = "visibility: hidden">
+			<img id = "nw" class = "parallax" width = "13%" style = "visibility: hidden">
+			<img id = "sw" class = "parallax" width = "12%" style = "visibility: hidden">
+			<img id = "w" class = "parallax" width = "18%" style = "visibility: hidden">
 		</div>
-	</div>
 	</main>
 	<nav class = "navbar">
 		<div class = "headbar">
 			<ul>
 				<span id = "banana"><li>banana</li></span>
 				<span id = "icon"><li id = "icon" onMouseOver = "headside(0)"><img src="src/banana.png"></li></span>
-				<li onMouseOver = "headside(1)">Music</li>
+				<li onMouseOver = "headside(1)" >Music</li>
 				<span id = "minion"><li onMouseOver = "headside(2)">Minion!</li></span>
-				<li onMouseOver = "headside(3)">about Us</li>
+				<li onMouseOver = fu"headside(3)">about Us</li>
 				<li onMouseOver = "headside(4)">contact</li>	
 			</ul>			
 		</div>
-	</nav>
-
-		
-		
+	</nav>	
 	<script>
+		function showCover(){
+			document.getElementById("ne").src = "cover/" + cover[0];
+			document.getElementById("e").src = "cover/" + cover[1];
+			document.getElementById("se").src = "cover/" + cover[2];		
+			document.getElementById("nw").src = "cover/" + cover[3];
+			document.getElementById("w").src = "cover/" + cover[4];
+			document.getElementById("sw").src = "cover/" + cover[5];	
+			timeShowCover();	
+		}
+		function timeShowCover(){
+			window.setTimeout( function(){
+				document.getElementById("ne").style.visibility = "visible";
+				document.getElementById("ne").style.animation = "showCv 2s"; 
+			} , 300 );
+			window.setTimeout( function(){
+				document.getElementById("e").style.visibility = "visible";
+				document.getElementById("e").style.animation = "showCv 2s"; 
+			} , 600 );
+			window.setTimeout( function(){
+				document.getElementById("se").style.visibility = "visible";
+				document.getElementById("se").style.animation = "showCv 2s"; 
+			} , 900 );
+			window.setTimeout( function(){
+				document.getElementById("sw").style.visibility = "visible";
+				document.getElementById("sw").style.animation = "showCv 2s"; 
+			} , 1200 );
+			window.setTimeout( function(){
+				document.getElementById("w").style.visibility = "visible";
+				document.getElementById("w").style.animation = "showCv 2s"; 
+			} , 1500 );
+			window.setTimeout( function(){
+				document.getElementById("nw").style.visibility = "visible";
+				document.getElementById("nw").style.animation = "showCv 2s"; 
+			} , 1800 );
+		}
+		/*position = ["ne","e","se","nw","w","sw"];
+		function animationShowCover(){
+			for( i=0; i<=50000000; i++ ){
+				var j = i%10000000;
+				var k = i/10000000;
+				if( j == 0 ){
+					console.log(position[k]);
+					document.getElementById(position[k]).style.visibility = "visible";
+				}
+				
+			}
+			
+		}*/
 		/*function headside(i){
 			switch(i){
 				case 0:
@@ -83,91 +231,6 @@
 					break;
 			}
 		}*/
-		//////////////////////////////////////////////
-		window.onload = function () {
-			//console.log("kaw");
-			var parallax = document.getElementById("main");
-			var playL = document.getElementById( 'l1' ).offsetLeft,
-				playT = document.getElementById( 'l1' ).offsetTop,
-				bgL = document.getElementById( 'l2' ).offsetLeft,
-				bgT = document.getElementById( 'l2' ).offsetTop,
-				neL = document.getElementById( 'ne' ).offsetLeft,
-				neT = document.getElementById( 'ne' ).offsetTop,
-				eL = document.getElementById( 'e' ).offsetLeft,
-				eT = document.getElementById( 'e' ).offsetTop;
-				seL = document.getElementById( 'se' ).offsetLeft,
-				seT = document.getElementById( 'se' ).offsetTop,
-				nwL = document.getElementById( 'nw' ).offsetLeft,
-				nwT = document.getElementById( 'nw' ).offsetTop,
-				wL = document.getElementById( 'w' ).offsetLeft,
-				wT = document.getElementById( 'w' ).offsetTop,
-				swL = document.getElementById( 'sw' ).offsetLeft,
-				swT = document.getElementById( 'sw' ).offsetTop;
-			//console.log(playL + "      " + playT);
-			parallax.onmousemove = function ( event ) {
-				//console.log("onmousemove");
-				event = event || window.event;
-				var x = event.clientX - parallax.offsetLeft,
-					y = event.clientY - parallax.offsetTop;
-
-				mouseParallax( 'playbt', playL, playT, x, y, 10 );
-				mouseParallax( 'bg', bgL, bgT, x, y, 2 );
-				mouseParallax( 'ne', neL, neT, x, y, 5 );
-				mouseParallax( 'e', eL, eT, x, y, 10 );
-				mouseParallax( 'se', seL, seT, x, y, 5 );
-				mouseParallax( 'nw', nwL, nwT, x, y, 5 );
-				mouseParallax( 'w', wL, wT, x, y, 10 );
-				mouseParallax( 'sw', swL, swT, x, y, 5 );
-			}
-
-			function mouseParallax ( id, left, top, mouseX, mouseY, speed ){
-				
-				//console.log("mouseParallax");
-				var obj = document.getElementById(id);
-				//console.log(obj);
-
-				var parentObj = obj.parentNode,
-				containerWidth = parseInt( parentObj.offsetWidth ),
-				containerHeight = parseInt( parentObj.offsetHeight );
-
-				// containerHeight=parseInt(getHeight(obj));
-				// containerWidth=parseInt(getW(obj));
-
-
-				containerHeight=obj.clientWidth;
-				containerWidth=obj.clientHeight;
-
-				//console.log("conW = "+containerWidth+"\nConH = "+containerHeight);
-				obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetHeight ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
-				//containerHeight = 1200;
-				obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
-				
-
-				// obj.style.top = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
-
-				//console.log(obj.style.left + "      " + obj.style.top);
-				
-						}
-		}
-		///////////////////////////////////////////////
-		function getHeight(element)
-		{
-		    element.style.visibility = "hidden";
-		    document.body.appendChild(element);
-		    var height = element.offsetHeight + 0;
-		    document.body.removeChild(element);
-		    element.style.visibility = "visible";
-		    return height;
-		}
-		function getW(element)
-		{
-		    element.style.visibility = "hidden";
-		    document.body.appendChild(element);
-		    var w = element.offsetWidth + 0;
-		    document.body.removeChild(element);
-		    element.style.visibility = "visible";
-		    return w;
-		}
 	</script>
 </body>
 </html>
