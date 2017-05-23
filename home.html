@@ -67,14 +67,34 @@
 				// obj.style.top = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
 				//console.log(obj.style.left + "      " + obj.style.top);				
 			}
-			var randomCover = Math.floor((Math.random()*6 )+1);
-			console.log(randomCover);
-			showCover(randomCover);
-			function showCover(l){
-				switch(l){
-					case 1:
-						console.log("ysegf");
-				}
+			
+			/*var cover = [0,1,2,3,4,5];
+			random();
+			function random(){		
+				for (var i = 0.; i <= 5 ; i++) {
+					var randomCover = Math.floor((Math.random()*6 ));
+					var temp = cover[i]
+					cover[i] = cover[randomCover];
+					cover[randomCover] = temp;
+				};
+				console.log(cover);
+			}*/
+			var cover = [
+				"coldplay1.jpg",
+				"divide.jpg",
+				"bruno.jpg",
+				"twentyonepilots.jpg",
+				"katyperry.jpg",
+				"imaginedragon.jpg"];
+			random();
+			function random(){		
+				for (var i = 0.; i <= 5 ; i++) {
+					var randomCover = Math.floor((Math.random()*6 ));
+					var temp = cover[i]
+					cover[i] = cover[randomCover];
+					cover[randomCover] = temp;
+				};
+				console.log(cover);
 			}
 		}
 	</script>
