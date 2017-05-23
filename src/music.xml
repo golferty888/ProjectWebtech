@@ -9,18 +9,29 @@
 		<SOUND1>track\bruno_mars\24K Magic.mp3</SOUND1>
 		<SOUND2>track\bruno_mars\That’s What I Like.mp3</SOUND2>
 		<SOUND3>track\bruno_mars\Versace on The Floor.mp3</SOUND3>		
-		<IMAGE>album_cover\24kmagic_bruno.jpg</IMAGE>
+		<IMAGE1>cover\bruno.jpg</IMAGE1>			
+		<IMAGE2>cover\brunomar.jpg</IMAGE2>
 	</ARTIST>
-
 	<ARTIST>
-		<NAME>Bruno Mars</NAME>
-		<ALBUM>24k magic</ALBUM>
+		<NAME>Twenty One Pilots</NAME>
+		<ALBUM>Blurryface</ALBUM>
+		<YEAR>2015</YEAR>
+		<GENRE>Alternative hip hop, Electropop, Hip hop, Indie pop, Pop, Reggae, Rock</GENRE>
+		<LABELS>Fueled by Ramen</LABELS>
+		<SOUND1>track\
+		<SOUND2>track\</SOUND2>
+		<SOUND3>track\</SOUND3>	
+		<IMAGE1>cover\twentyonepilots.jpg</IMAGE1>
+	</ARTIST>
+	<ARTIST>
+		<NAME>The Chainsmokers</NAME>
+		<ALBUM>Memories...Do Not Open</ALBUM>
 		<YEAR>2017</YEAR>
 		<GENRE>Pop</GENRE>
 		<LABELS>Disruptor, Columbia</LABELS>
 		<SOUND1>track\chainsmokers\Closer ft. Halsey.mp3</SOUND1>
 		<SOUND2>track\chainsmokers\Paris.mp3</SOUND2>
 		<SOUND3>track\chainsmokers\Something Just Like This ft. Coldplay.mp3</SOUND3>	
-		<IMAGE>album_cover\coldplay_mylo_xyloto.jpg</IMAGE>
+		<IMAGE1>album_cover\coldplay_mylo_xyloto.jpg</IMAGE1>
 	</ARTIST>
 </CATALOG>
