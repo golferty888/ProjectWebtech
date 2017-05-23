@@ -120,12 +120,12 @@
 			<img id = "playbt" class = "parallax" src = "src/playbt.png" width = "15%">
 		</div>
 		<div id="s1">
-			<img id = "ne" class = "parallax" src = "cover/coldplay1.jpg" width = "13%">
-			<img id = "se" class = "parallax" src = "cover/divide.jpg" width = "12%">
-			<img id = "e" class = "parallax" src = "cover/bruno.jpg" width = "18%">
-			<img id = "nw" class = "parallax" src = "cover/twentyonepilots.jpg" width = "13%">
-			<img id = "sw" class = "parallax" src = "cover/katyperry.jpg" width = "12%">
-			<img id = "w" class = "parallax" src = "cover/imaginedragon.jpg" width = "18%">
+			<img id = "ne" class = "parallax" width = "13%">
+			<img id = "se" class = "parallax" width = "12%">
+			<img id = "e" class = "parallax" width = "18%">
+			<img id = "nw" class = "parallax" width = "13%">
+			<img id = "sw" class = "parallax" width = "12%">
+			<img id = "w" class = "parallax" width = "18%">
 		</div>
 	</main>
 	<nav class = "navbar">
@@ -141,14 +141,13 @@
 		</div>
 	</nav>	
 	<script>
-
 		function showCover(){
 			document.getElementById("ne").src = "cover/" + cover[0];
-			document.getElementById("se").src = "cover/" + cover[1];
-			document.getElementById("e").src = "cover/" + cover[2];
+			document.getElementById("e").src = "cover/" + cover[1];
+			document.getElementById("se").src = "cover/" + cover[2];		
 			document.getElementById("nw").src = "cover/" + cover[3];
-			document.getElementById("sw").src = "cover/" + cover[4];
-			document.getElementById("w").src = "cover/" + cover[5];
+			document.getElementById("w").src = "cover/" + cover[4];
+			document.getElementById("sw").src = "cover/" + cover[5];		
 		}
 		/*function headside(i){
 			switch(i){
