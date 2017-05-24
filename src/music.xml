@@ -36,9 +36,9 @@
 		<YEAR>2011</YEAR>
 		<GENRE>Pop, Pop rock, R and B, Electronica</GENRE>
 		<LABELS>Parlophone, Capitol</LABELS>
-		<SOUND1>track\coldplay\Charlie Brown.mp3</SOUND1>
-		<SOUND2>track\coldplay\Paradise.mp3</SOUND2>
-		<SOUND3>track\coldplay\Princess Of China ft. Rihanna.mp3</SOUND3>
+		<SOUND1>track\coldplay\Shiver.mp3</SOUND1>
+		<SOUND2>track\coldplay\Trouble.mp3</SOUND2>
+		<SOUND3>track\coldplay\Yellow.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
 		<NAME>Katy Perry</NAME>
@@ -51,13 +51,13 @@
 		<SOUND3>track\katy_perry\Swish ft.Nicki Minaj.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>Imagine Dragon</NAME>
-		<ALBUM>Night Visions</ALBUM>
-		<YEAR>2012</YEAR>
-		<GENRE>Pop, Rock, Alternative rock, Electronica</GENRE>
-		<LABELS>KIDinaKORNER, Interscope</LABELS>
-		<SOUND1>track\imaginedragon\Radioactive.mp3</SOUND1>
-		<SOUND2>track\imaginedragon\Demons.mp3</SOUND2>
-		<SOUND3>track\imaginedragon\It's Time.mp3</SOUND3>
+		<NAME>The Chainsmokers</NAME>
+		<ALBUM>Memories...Do Not Open</ALBUM>
+		<YEAR>2017</YEAR>
+		<GENRE>Pop</GENRE>
+		<LABELS>Disruptor, Columbia</LABELS>
+		<SOUND1>track\chainsmokers\Closer ft. Halsey.mp3</SOUND1>
+		<SOUND2>track\chainsmokers\Paris.mp3</SOUND2>
+		<SOUND3>track\chainsmokers\Something Just Like This ft. Coldplay.mp3</SOUND3>
 	</ARTIST>
 </CATALOG>
