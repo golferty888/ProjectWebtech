@@ -217,7 +217,8 @@
 			audio.pause();
 			audio = new Audio("track/" + cover[o] + ".mp3");
 			audio.volume= .4;
-			audio.play();							
+			audio.play();
+			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "parallax" src = "src/fStop.png" width = "15%">'						
 		}
 		function playBtn(){
 			audio.pause();
