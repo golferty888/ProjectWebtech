@@ -252,8 +252,10 @@
 			} , 1200 );
 				document.getElementById("nw").setAttribute("onclick", "showPlayBt(5)");
 		}
+		audio = new Audio("");
 		function showPlayBt(o){
-				var audio = new Audio("track/" + cover[o] + ".mp3");
+				audio.pause();
+				audio = new Audio("track/" + cover[o] + ".mp3");
 				audio.volume= .4;
 				audio.play();
 				played = true;							
