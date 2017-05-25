@@ -50,6 +50,15 @@ body{
     margin: -10px -10px;*/
     position: absolute;
 }
+.cover{
+    position: absolute;
+    border-radius:10px;
+    border: 1px solid grey;
+    padding: 5px;
+}
+.cover:hover{
+    box-shadow: 0 0 10px 3px orange;
+}
 
 #l2{
     max-width: 100%;
