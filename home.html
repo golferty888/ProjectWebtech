@@ -30,8 +30,6 @@
 			var parallax = document.getElementById("main");
 			var playL = document.getElementById( 'l1' ).offsetLeft,
 				playT = document.getElementById( 'l1' ).offsetTop,
-				bgL = document.getElementById( 'l2' ).offsetLeft,
-				bgT = document.getElementById( 'l2' ).offsetTop,
 				neL = document.getElementById( 'ne' ).offsetLeft,
 				neT = document.getElementById( 'ne' ).offsetTop,
 				eL = document.getElementById( 'e' ).offsetLeft,
@@ -52,7 +50,6 @@
 					y = event.clientY - parallax.offsetTop;
 
 				//mouseParallax( 'playbt', playL, playT, x, y, 0 );
-				mouseParallax( 'bg', bgL, bgT, x, y, 0 );
 				mouseParallax( 'ne', neL, neT, x, y, 2 );
 				mouseParallax( 'e', eL, eT, x, y, 10 );
 				mouseParallax( 'se', seL, seT, x, y, 5 );
@@ -103,9 +100,7 @@
 
 	</script>
 	<main id = "main">
-		<div id="l2">
-			<img id = "bg" class = "parallax" src = "src/bg5.jpg" width = "100%" >
-		</div>
+		<img id = "bg" src = "src/bg5.jpg" >
 		//--------------------------//
 		<div id="myModal" class="modal">
 
@@ -117,8 +112,8 @@
 		</div>		
 		//---------------------------//
 		<div id="l1">
-			<img id = "stopbt"  onclick="stopBtn()" class = "parallax" src = "src/fStop.png" width = "15%">
-			<img id = "playbt"  onclick="playBtn()" class = "parallax" src = "src/fPlay.png" width = "15%">
+			<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">
+			<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/fPlay.png" width = "15%">
 		</div>
 		<div id="s1">
 			<img id = "ne" class = "cover" width = "13%" style = "visibility: hidden">
@@ -218,7 +213,7 @@
 			audio = new Audio("track/" + cover[o] + ".mp3");
 			audio.volume= .4;
 			audio.play();
-			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "parallax" src = "src/fStop.png" width = "15%">'						
+			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">'						
 		}
 		function playBtn(){
 			audio.pause();
@@ -226,11 +221,11 @@
 			audio = new Audio("track/" + cover[rd] + ".mp3");
 			audio.volume= .4;
 			audio.play();
-			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "parallax" src = "src/fStop.png" width = "15%">'
+			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">'
 		}
 		function stopBtn(){
 			audio.pause();
-			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "parallax" src = "src/fPlay.png" width = "15%">'
+			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/fPlay.png" width = "15%">'
 			
 		}
 		function headside(i){

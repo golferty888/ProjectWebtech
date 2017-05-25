@@ -4,6 +4,11 @@ html{
 }
 body{
     color: white;
+    /*background-image: url("../src/bg5.jpg");*/
+}
+#bg{
+    max-width: 100%;
+    height: auto;
 }
 .navbar{
     position: fixed;
@@ -45,7 +50,7 @@ body{
     /*color: rgba(0,0,0,0.8);*/
     visibility: hidden;
 }
-.parallax{
+.midBtn{
     /*margin: 10% 37.5% 10% 37.5%;
     margin: -10px -10px;*/
     position: absolute;
@@ -55,14 +60,10 @@ body{
     border-radius:10px;
     border: 1px solid grey;
     padding: 5px;
+    display: block;
 }
 .cover:hover{
     box-shadow: 0 0 10px 3px orange;
-}
-
-#l2{
-    max-width: 100%;
-    height: auto;
 }
 #bg{
     opacity: 0.4;
