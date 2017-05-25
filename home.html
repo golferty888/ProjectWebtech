@@ -132,7 +132,7 @@
 			random();
 			function random(){		
 				for (var i = 0.; i <= 5 ; i++) {
-					var randomCover = Math.floor((Math.random()*6 ));
+					var randomCover = Math.floor((Math.random()*5 ));
 					var temp = cover[i]
 					cover[i] = cover[randomCover];
 					cover[randomCover] = temp;
@@ -158,7 +158,8 @@
 		</div>		
 		//---------------------------//
 		<div id="l1">
-			<img id = "playbt"  onclick="test()" class = "parallax" src = "src/playbt.png" width = "15%">
+			<img id = "stopbt"  onclick="stopBtn()" class = "parallax" src = "src/fStop.png" width = "15%">
+			<img id = "playbt"  onclick="playBtn()" class = "parallax" src = "src/fPlay.png" width = "15%">
 		</div>
 		<div id="s1">
 			<img id = "ne" class = "parallax" width = "13%" style = "visibility: hidden">
@@ -175,7 +176,7 @@
 				<span id = "banana"><li>banana</li></span>
 				<span id = "icon"><li id = "icon" onclick = "headside(0)"><img src="src/banana.png"></li></span>
 				<li onclick = "headside(1)" >Music</li>
-				<span id = "minion"><li onclick = "headside(2)">Minion!</li></span>
+				<span id = "minion"><li onclick = "test()">TEST</li></span>
 				<li onclick = "headside(3)">about Us</li>
 				<li onclick = "headside(4)">contact</li>	
 			</ul>			
@@ -188,7 +189,7 @@
 			var modal = document.getElementById('myModal');
 
 			// Get the button that opens the modal
-			var btn = document.getElementById("playbt");
+			var btn = document.getElementById("minion");
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
@@ -254,11 +255,23 @@
 		}
 		audio = new Audio("");
 		function showPlayBt(o){
-				audio.pause();
-				audio = new Audio("track/" + cover[o] + ".mp3");
-				audio.volume= .4;
-				audio.play();
-				played = true;							
+			audio.pause();
+			audio = new Audio("track/" + cover[o] + ".mp3");
+			audio.volume= .4;
+			audio.play();							
+		}
+		function playBtn(){
+			audio.pause();
+			var rd = Math.floor(Math.random()*5);
+			audio = new Audio("track/" + cover[rd] + ".mp3");
+			audio.volume= .4;
+			audio.play();
+			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "parallax" src = "src/fStop.png" width = "15%">'
+		}
+		function stopBtn(){
+			audio.pause();
+			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "parallax" src = "src/fPlay.png" width = "15%">'
+			
 		}
 		function headside(i){
 			switch(i){
