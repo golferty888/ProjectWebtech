@@ -98,7 +98,7 @@
 	<main id = "main">
 		<img id = "bg" src = "src/bg5.jpg" >		
 		<div id="l1">
-			<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/midPlay.png" width = "15%">
+			<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/cvPlay.png" width = "15%">
 		</div>
 		<div id="s1">
 			<div class = "cv0">
@@ -211,10 +211,10 @@
 			<ul>
 				<span id = "banana"><li>banana</li></span>
 				<span id = "icon"><li id = "icon" onclick = "headside(0)"><img src="src/banana.png"></li></span>
-				<li onclick = "headside(1)" >Music</li>
-				<span id = "minion"><li onclick = "test()">TEST</li></span>
-				<li onclick = "headside(3)">about Us</li>
-				<li onclick = "headside(4)">contact</li>	
+				<li onclick = "headside(1)" >Music</li>	
+				<li onclick = "headside(3)">About Us</li>
+				<li onclick = "headside(4)">Contact</li>
+				<li onclick = "headside(2)">Credit</li>
 			</ul>			
 		</div>
 	</nav>	
@@ -324,7 +324,7 @@
 			audio = new Audio("track/" + cover[o] + ".mp3");
 			audio.volume= .4;
 			audio.play();
-			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">'						
+			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/cvStop.png" width = "15%">'						
 		}
 		function playBtn(){
 			audio.pause();
@@ -332,11 +332,11 @@
 			audio = new Audio("track/" + cover[rd] + ".mp3");
 			audio.volume= .4;
 			audio.play();
-			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">'
+			document.getElementById("l1").innerHTML = '<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/cvStop.png" width = "15%">'
 		}
 		function stopBtn(){
 			audio.pause();
-			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/midPlay.png" width = "15%">'
+			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/cvPlay.png" width = "15%">'
 			
 		}
 		function headside(i){
@@ -347,12 +347,22 @@
 					playSound(0);
 					break;
 				case 1: 
-					alert("Bello!");
+					alert("Welcome !");
 					break;
 				case 2: 
-					document.getElementById("minion").innerHTML = '<li style = "color:lightgrey" >Minion!</li>';
-					window.setTimeout( function(){ change(1); } , 3000 );
-					playSound(1);
+					alert("Credit"+
+"Album cover\n"+
+"https://www.matichonweekly.com/art/article_18948  \n: 24k magic album cover\n"+
+"https://genius.com/The-chainsmokers-memories-do-not-open-tracklist-album-art-lyrics \n: Memories do not open album cover\n"+
+"http://www.nme.com/news/music/katy-perry-witness-album-cover-2073601 \n: Witness album cover\n"+
+"http://twenty-one-pilots.wikia.com/wiki/Blurryface \n: Blurryface album cover\n"+
+"http://www.breatheheavy.com/stream-ed-sheerans-new-album-divide/ \n: Divide album cover\n"+
+"Background image\n"+
+"https://stocksnap.io/\n"+
+"icon\n"+
+"http://www.flaticon.com/\n"+
+"cut music\n"+
+"http://mp3cut.net/th/");
 					break;
 				case 3: alert("59130500073\n59130500100\n59130500128\n59130500133\n59130500136\n59130500139");break;
 				case 4: alert("Tanapat Choochot");break;
