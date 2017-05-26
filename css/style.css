@@ -7,6 +7,7 @@ body{
     /*background-image: url("../src/bg5.jpg");*/
 }
 #bg{
+    position: absolute;
     max-width: 100%;
     height: auto;
 }
@@ -91,6 +92,9 @@ body{
 #information{
     position: absolute;
     padding: 2px 2px;
+}
+#iBt{
+    position: absolute;
 }
 #ne{
     top: 15%;
