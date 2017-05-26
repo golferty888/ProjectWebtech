@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CATALOG>
 	<ARTIST>
-		<NAME>Bruno Mars</NAME>
-		<ALBUM>24k magic</ALBUM>
-		<YEAR>2016</YEAR>
-		<GENRE>R and B, Soul</GENRE>
-		<LABELS>Atlantic</LABELS>
+		<NAME>Name : Bruno Mars</NAME>
+		<ALBUM>Album : 24k magic</ALBUM>
+		<YEAR>Year : 2016</YEAR>
+		<GENRE>Genre : R and B, Soul</GENRE>
+		<LABELS>Labels : Atlantic</LABELS>
 		<SOUND1>track\bruno_mars\24K Magic.mp3</SOUND1>
 		<SOUND2>track\bruno_mars\That’s What I Like.mp3</SOUND2>
 		<SOUND3>track\bruno_mars\Versace on The Floor.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>Twenty One Pilots</NAME>
-		<ALBUM>Blurryface</ALBUM>
-		<YEAR>2015</YEAR>
-		<GENRE>Alternative hip hop, Electropop, Hip hop, Indie pop, Pop, Reggae, Rock</GENRE>
-		<LABELS>Fueled by Ramen</LABELS>
+		<NAME>Name : Twenty One Pilots</NAME>
+		<ALBUM>Album : Blurryface</ALBUM>
+		<YEAR>Year : 2015</YEAR>
+		<GENRE>Genre : Alternative hip hop, Electropop, Hip hop, Indie pop, Pop, Reggae, Rock</GENRE>
+		<LABELS>Labels : Fueled by Ramen</LABELS>
 		<SOUND1>track\twenty one pilots\Heavydirtysoul.mp3</SOUND1>
 		<SOUND2>track\twenty one pilots\Ride.mp3</SOUND2>
 		<SOUND3>track\twenty one pilots\Stressed Out.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>Ed Sheeran</NAME>
-		<ALBUM>Divide</ALBUM>
-		<YEAR>2017</YEAR>
-		<GENRE>Pop</GENRE>
-		<LABELS>Asylum, Atlantic</LABELS>
+		<NAME>Name : Ed Sheeran</NAME>
+		<ALBUM>Album : Divide</ALBUM>
+		<YEAR>Year : 2017</YEAR>
+		<GENRE>Genre : Pop</GENRE>
+		<LABELS>Labels : Asylum, Atlantic</LABELS>
 		<SOUND1>track\ed sheeran\Castle On The Hill.mp3</SOUND1>
 		<SOUND2>track\ed sheeran\Perfect.mp3</SOUND2>
 		<SOUND3>track\ed sheeran\Shape Of You.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>Coldplay</NAME>
-		<ALBUM>Mylo Xyloto</ALBUM>
-		<YEAR>2011</YEAR>
-		<GENRE>Pop, Pop rock, R and B, Electronica</GENRE>
-		<LABELS>Parlophone, Capitol</LABELS>
+		<NAME>Name : Coldplay</NAME>
+		<ALBUM>Album : Mylo Xyloto</ALBUM>
+		<YEAR>Year : 2011</YEAR>
+		<GENRE>Genre : Pop, Pop rock, R and B, Electronica</GENRE>
+		<LABELS>Labels : Parlophone, Capitol</LABELS>
 		<SOUND1>track\coldplay\Shiver.mp3</SOUND1>
 		<SOUND2>track\coldplay\Trouble.mp3</SOUND2>
 		<SOUND3>track\coldplay\Yellow.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>Katy Perry</NAME>
-		<ALBUM>Witness</ALBUM>
-		<YEAR>2017</YEAR>
-		<GENRE>Pop, Rock</GENRE>
-		<LABELS>Capitol</LABELS>
+		<NAME>Name : Katy Perry</NAME>
+		<ALBUM>Album : Witness</ALBUM>
+		<YEAR>Year : 2017</YEAR>
+		<GENRE>Genre : Pop, Rock</GENRE>
+		<LABELS>Labels : Capitol</LABELS>
 		<SOUND1>track\katy_perry\Bon Appétit (Visualizer) ft. Migos.mp3</SOUND1>
 		<SOUND2>track\katy_perry\Chained To The Rhythm ft. Skip Marley.mp3</SOUND2>
 		<SOUND3>track\katy_perry\Swish ft.Nicki Minaj.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
-		<NAME>The Chainsmokers</NAME>
-		<ALBUM>Memories...Do Not Open</ALBUM>
-		<YEAR>2017</YEAR>
-		<GENRE>Pop</GENRE>
-		<LABELS>Disruptor, Columbia</LABELS>
+		<NAME>Name : The Chainsmokers</NAME>
+		<ALBUM>Album : Memories...Do Not Open</ALBUM>
+		<YEAR>Year : 2017</YEAR>
+		<GENRE>Genre : Pop</GENRE>
+		<LABELS>Labels : Disruptor, Columbia</LABELS>
 		<SOUND1>track\chainsmokers\Closer ft. Halsey.mp3</SOUND1>
 		<SOUND2>track\chainsmokers\Paris.mp3</SOUND2>
 		<SOUND3>track\chainsmokers\Something Just Like This ft. Coldplay.mp3</SOUND3>

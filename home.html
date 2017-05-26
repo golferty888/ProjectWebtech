@@ -14,17 +14,7 @@
 </head>
 <body onload = "parallax()">
 	<script>
-		var x,xmlhttp,xmlDoc; 
-		  xmlhttp = new XMLHttpRequest(); 
-		  xmlhttp.open("GET", "src/music.xml", false); 
-		  xmlhttp.send(); 
-		  xmlDoc = xmlhttp.responseXML;  
-		  x = xmlDoc.getElementsByTagName("ARTIST"); 
-		  test = ""; 
-		  for (i = 0; i <x.length; i++) {  
-		    test += x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue + "\n"; 
-		  } 
-		  console.log(test); 
+		
 		function parallax() {
 			//console.log("kaw");
 			var parallax = document.getElementById("main");
@@ -79,12 +69,13 @@
 			}
 
 			cover = [
-				"bruno-24kmagic",
-				"chainsmokers-memories",
-				"coldplay-parachutes",
-				"ed-divide",
-				"katy-witness",
-				"twentyonepilots-blurry"];
+				"Bruno Mars",
+				"Twenty One Pilots",
+				"Ed Sheeran",
+				"Coldplay",
+				"Katy Perry",
+				"The Chainsmokers"];
+			cvnum = [0,1,2,3,4,5];
 			random();
 			function random(){		
 				for (var i = 0.; i <= 5 ; i++) {
@@ -92,36 +83,121 @@
 					var temp = cover[i]
 					cover[i] = cover[randomCover];
 					cover[randomCover] = temp;
+					var temp1 = cvnum[i]
+					cvnum[i] = cvnum[randomCover];
+					cvnum[randomCover] = temp1;
 				};
 				console.log(cover);
+				console.log(cvnum);
 			}
 			showCover();
 		}
 
 	</script>
 	<main id = "main">
-		<img id = "bg" src = "src/bg5.jpg" >
-		//--------------------------//
-		<div id="myModal" class="modal">
-
-		  <!-- Modal content -->
-			<div class="modal-content">	<span class="close">&times;</span>
-		    <p style="text-align:center;">TEST</p>
-		  	</div>
-
-		</div>		
-		//---------------------------//
+		<img id = "bg" src = "src/bg5.jpg" >		
 		<div id="l1">
 			<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">
 			<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/fPlay.png" width = "15%">
 		</div>
 		<div id="s1">
-			<img id = "ne" class = "cover" width = "13%" style = "visibility: hidden">
-			<img id = "se" class = "cover" width = "12%" style = "visibility: hidden">
-			<img id = "e" class = "cover" width = "18%" style = "visibility: hidden">
-			<img id = "nw" class = "cover" width = "13%" style = "visibility: hidden">
-			<img id = "sw" class = "cover" width = "12%" style = "visibility: hidden">
-			<img id = "w" class = "cover" width = "18%" style = "visibility: hidden">
+			<div class = "cv0">
+				<img id = "se" class = "cover" width = "13%" style = "visibility: hidden">
+				<div class = "position">
+					<div class = "information" >
+						<img src = "src/banana.png">
+					</div>
+				</div>
+			</div>
+			//--------------------------//
+			<div id="myModal0" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">	<span class="close">&times;</span>
+			    <p id="content0-0">TEST0</p>
+			    <p id="content0-1">TEST0</p>
+			    <p id="content0-2">TEST0</p>
+			    <p id="content0-3">TEST0</p>
+			    <p id="content0-4">TEST0</p>
+			  	</div>
+
+			</div>		
+			//---------------------------//			
+
+			<div class = "cv1"><img id = "ne" class = "cover" width = "12%" style = "visibility: hidden"></div>
+			//--------------------------//
+			<div id="myModal1" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">	<span class="close">&times;</span>
+			    <p id="content1-0">TEST1</p>
+			    <p id="content1-1">TEST0</p>
+			    <p id="content1-2">TEST0</p>
+			    <p id="content1-3">TEST0</p>
+			    <p id="content1-4">TEST0</p>
+			  	</div>
+
+			</div>		
+			//---------------------------//
+
+			<div class = "cv2"><img id = "e" class = "cover" width = "18%" style = "visibility: hidden"></div>
+			//--------------------------//
+			<div id="myModal2" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">	<span class="close">&times;</span>
+			    <p id="content2-0">TEST2</p>
+			    <p id="content2-1">TEST0</p>
+			    <p id="content2-2">TEST0</p>
+			    <p id="content2-3">TEST0</p>
+			    <p id="content2-4">TEST0</p>
+			  	</div>
+
+			</div>		
+			//---------------------------//
+
+			<div class = "cv3"><img id = "sw" class = "cover" width = "13%" style = "visibility: hidden"></div>
+			//--------------------------//
+			<div id="myModal3" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">	<span class="close">&times;</span>
+			    <p id="content3-0">TEST3</p>
+			    <p id="content3-1">TEST0</p>
+			    <p id="content3-2">TEST0</p>
+			    <p id="content3-3">TEST0</p>
+			    <p id="content3-4">TEST0</p>
+			  	</div>
+
+			</div>		
+			//---------------------------//
+
+			<div class = "cv4"><img id = "nw" class = "cover" width = "12%" style = "visibility: hidden"></div>
+			//--------------------------//
+			<div id="myModal4" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">	<span class="close">&times;</span>
+			    <p id="content4-0">TEST4</p>
+			    <p id="content4-1">TEST0</p>
+			    <p id="content4-2">TEST0</p>
+			    <p id="content4-3">TEST0</p>
+			    <p id="content4-4">TEST0</p>
+			  	</div>
+
+			</div>		
+			//---------------------------//
+
+			<div class = "cv5"><img id = "w" class = "cover" width = "18%" style = "visibility: hidden"></div>
+			//--------------------------//
+			<div id="myModal5" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">	<span class="close">&times;</span>
+			    <p id="content5-0">TEST5</p>
+			    <p id="content5-1">TEST0</p>
+			    <p id="content5-2">TEST0</p>
+			    <p id="content5-3">TEST0</p>
+			    <p id="content5-4">TEST0</p>
+			  	</div>
+
+			</div>		
+			//---------------------------//
+
 		</div>
 	</main>
 	<nav class = "navbar">
@@ -137,13 +213,40 @@
 		</div>
 	</nav>	
 	<script>
+		var x,xmlhttp,xmlDoc; 
+		  xmlhttp = new XMLHttpRequest(); 
+		  xmlhttp.open("GET", "src/music.xml", false); 
+		  xmlhttp.send(); 
+		  xmlDoc = xmlhttp.responseXML;  
+		  x = xmlDoc.getElementsByTagName("ARTIST");		  
+		function callAjax(i, o){
+		    document.getElementById("content"+i+"-0").innerHTML = x[o].getElementsByTagName("NAME")[0].childNodes[0].nodeValue;
+		    document.getElementById("content"+i+"-1").innerHTML = x[o].getElementsByTagName("ALBUM")[0].childNodes[0].nodeValue;
+		    document.getElementById("content"+i+"-2").innerHTML = x[o].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+		    document.getElementById("content"+i+"-3").innerHTML = x[o].getElementsByTagName("GENRE")[0].childNodes[0].nodeValue;
+		    document.getElementById("content"+i+"-4").innerHTML = x[o].getElementsByTagName("LABELS")[0].childNodes[0].nodeValue;  
+		}
+		function test(i){
 
-		function test(){
-			// Get the modal
-			var modal = document.getElementById('myModal');
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("minion");
+			if(i == 0){
+				var modal = document.getElementById('myModal0');
+				var btn = document.getElementById("ne");
+			}else if(i == 1){
+				var modal = document.getElementById('myModal1');
+				var btn = document.getElementById("e");
+			}else if(i == 2){
+				var modal = document.getElementById('myModal2');
+				var btn = document.getElementById("se");
+			}else if(i == 3){
+				var modal = document.getElementById('myModal3');
+				var btn = document.getElementById("sw");
+			}else if(i == 4){
+				var modal = document.getElementById('myModal4');
+				var btn = document.getElementById("w");
+			}else if(i == 5){
+				var modal = document.getElementById('myModal5');
+				var btn = document.getElementById("nw");
+			}
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
@@ -165,14 +268,13 @@
 			    }
 			}
 		}
-
 		function showCover(){
 			document.getElementById("ne").src = "cover/" + cover[0] + ".jpg";
 			document.getElementById("e").src = "cover/" + cover[1] + ".jpg";
 			document.getElementById("se").src = "cover/" + cover[2] + ".jpg";		
 			document.getElementById("sw").src = "cover/" + cover[3] + ".jpg";
 			document.getElementById("w").src = "cover/" + cover[4] + ".jpg";
-			document.getElementById("nw").src = "cover/" + cover[5] + ".jpg";	
+			document.getElementById("nw").src = "cover/" + cover[5] + ".jpg";
 			timeShowCover();	
 		}
 		function timeShowCover(){
@@ -180,32 +282,32 @@
 				document.getElementById("ne").style.visibility = "visible";
 				document.getElementById("ne").style.animation = "showCv 2s"; 
 			} , 200 );
-				document.getElementById("ne").setAttribute("onclick", "showPlayBt(0), test(0)");
+				document.getElementById("ne").setAttribute("onclick", "showPlayBt(0), test(0), callAjax(0, cvnum[0])");
 			window.setTimeout( function(){
 				document.getElementById("e").style.visibility = "visible";
 				document.getElementById("e").style.animation = "showCv 2s"; 
 			} , 400 );
-				document.getElementById("e").setAttribute("onclick", "showPlayBt(1), test(1)");
+				document.getElementById("e").setAttribute("onclick", "showPlayBt(1), test(1), callAjax(1, cvnum[1])");
 			window.setTimeout( function(){
 				document.getElementById("se").style.visibility = "visible";
 				document.getElementById("se").style.animation = "showCv 2s"; 
 			} , 600 );
-				document.getElementById("se").setAttribute("onclick", "showPlayBt(2), test(2)");
+				document.getElementById("se").setAttribute("onclick", "showPlayBt(2), test(2), callAjax(2, cvnum[2])");
 			window.setTimeout( function(){
 				document.getElementById("sw").style.visibility = "visible";
 				document.getElementById("sw").style.animation = "showCv 2s"; 
 			} , 800 );
-				document.getElementById("sw").setAttribute("onclick", "showPlayBt(3), test(3)");
+				document.getElementById("sw").setAttribute("onclick", "showPlayBt(3), test(3), callAjax(3, cvnum[3])");
 			window.setTimeout( function(){
 				document.getElementById("w").style.visibility = "visible";
 				document.getElementById("w").style.animation = "showCv 2s"; 
 			} , 1000 );
-				document.getElementById("w").setAttribute("onclick", "showPlayBt(4), test(4)");
+				document.getElementById("w").setAttribute("onclick", "showPlayBt(4), test(4), callAjax(4, cvnum[4])");
 			window.setTimeout( function(){
 				document.getElementById("nw").style.visibility = "visible";
 				document.getElementById("nw").style.animation = "showCv 2s"; 
 			} , 1200 );
-				document.getElementById("nw").setAttribute("onclick", "showPlayBt(5), test(5)");
+				document.getElementById("nw").setAttribute("onclick", "showPlayBt(5), test(5), callAjax(5, cvnum[5])");
 		}
 		audio = new Audio("");
 		function showPlayBt(o){
