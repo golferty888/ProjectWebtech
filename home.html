@@ -98,8 +98,7 @@
 	<main id = "main">
 		<img id = "bg" src = "src/bg5.jpg" >		
 		<div id="l1">
-			<img id = "stopbt"  onclick="stopBtn()" class = "midBtn" src = "src/fStop.png" width = "15%">
-			<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/fPlay.png" width = "15%">
+			<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/midPlay.png" width = "15%">
 		</div>
 		<div id="s1">
 			<div class = "cv0">
@@ -337,7 +336,7 @@
 		}
 		function stopBtn(){
 			audio.pause();
-			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/fPlay.png" width = "15%">'
+			document.getElementById("l1").innerHTML = '<img id = "playbt"  onclick="playBtn()" class = "midBtn" src = "src/midPlay.png" width = "15%">'
 			
 		}
 		function headside(i){
