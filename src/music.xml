@@ -6,9 +6,12 @@
 		<YEAR>Year : 2016</YEAR>
 		<GENRE>Genre : R and B, Soul</GENRE>
 		<LABELS>Labels : Atlantic</LABELS>
-		<SOUND1>track\bruno_mars\24K Magic.mp3</SOUND1>
-		<SOUND2>track\bruno_mars\That’s What I Like.mp3</SOUND2>
-		<SOUND3>track\bruno_mars\Versace on The Floor.mp3</SOUND3>
+		<SOUND1N>24K Magic</SOUND1N>
+		<SOUND1>track\bruno_mars\24KMagic.mp3</SOUND1>
+		<SOUND2N>That's What I Like</SOUND2N>
+		<SOUND2>track\bruno_mars\ThatsWhatILike.mp3</SOUND2>
+		<SOUND3N>Versaceon The Floor</SOUND3N>
+		<SOUND3>track\bruno_mars\VersaceonTheFloor.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
 		<NAME>Name : Twenty One Pilots</NAME>
@@ -16,9 +19,12 @@
 		<YEAR>Year : 2015</YEAR>
 		<GENRE>Genre : Alternative hip hop, Electropop, Hip hop, Indie pop, Pop, Reggae, Rock</GENRE>
 		<LABELS>Labels : Fueled by Ramen</LABELS>
-		<SOUND1>track\twenty one pilots\Heavydirtysoul.mp3</SOUND1>
-		<SOUND2>track\twenty one pilots\Ride.mp3</SOUND2>
-		<SOUND3>track\twenty one pilots\Stressed Out.mp3</SOUND3>
+		<SOUND1N>Heavydirtysoul</SOUND1N>
+		<SOUND1>track\twentyonepilots\Heavydirtysoul.mp3</SOUND1>
+		<SOUND2N>Ride</SOUND2N>
+		<SOUND2>track\twentyonepilots\Ride.mp3</SOUND2>
+		<SOUND3N>Stressed Out</SOUND3N>
+		<SOUND3>track\twentyonepilots\StressedOut.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
 		<NAME>Name : Ed Sheeran</NAME>
@@ -26,9 +32,12 @@
 		<YEAR>Year : 2017</YEAR>
 		<GENRE>Genre : Pop</GENRE>
 		<LABELS>Labels : Asylum, Atlantic</LABELS>
-		<SOUND1>track\ed sheeran\Castle On The Hill.mp3</SOUND1>
-		<SOUND2>track\ed sheeran\Perfect.mp3</SOUND2>
-		<SOUND3>track\ed sheeran\Shape Of You.mp3</SOUND3>
+		<SOUND1N>Castle On The Hill</SOUND1N>
+		<SOUND1>track\edsheeran\CastleOnTheHill.mp3</SOUND1>
+		<SOUND2N>Perfect</SOUND2N>
+		<SOUND2>track\edsheeran\Perfect.mp3</SOUND2>
+		<SOUND3N>Shape Of You</SOUND3N>
+		<SOUND3>track\edsheeran\ShapeOfYou.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
 		<NAME>Name : Coldplay</NAME>
@@ -36,8 +45,11 @@
 		<YEAR>Year : 2011</YEAR>
 		<GENRE>Genre : Pop, Pop rock, R and B, Electronica</GENRE>
 		<LABELS>Labels : Parlophone, Capitol</LABELS>
+		<SOUND1N>Shiver</SOUND1N>
 		<SOUND1>track\coldplay\Shiver.mp3</SOUND1>
+		<SOUND2N>Trouble</SOUND2N>
 		<SOUND2>track\coldplay\Trouble.mp3</SOUND2>
+		<SOUND3N>Yellow</SOUND3N>
 		<SOUND3>track\coldplay\Yellow.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
@@ -46,9 +58,12 @@
 		<YEAR>Year : 2017</YEAR>
 		<GENRE>Genre : Pop, Rock</GENRE>
 		<LABELS>Labels : Capitol</LABELS>
-		<SOUND1>track\katy_perry\Bon Appétit (Visualizer) ft. Migos.mp3</SOUND1>
-		<SOUND2>track\katy_perry\Chained To The Rhythm ft. Skip Marley.mp3</SOUND2>
-		<SOUND3>track\katy_perry\Swish ft.Nicki Minaj.mp3</SOUND3>
+		<SOUND1N>Bon Appétit</SOUND1N>
+		<SOUND1>track\katy_perry\BonAppétit.mp3</SOUND1>
+		<SOUND2N>Chained To The Rhythm</SOUND2N>
+		<SOUND2>track\katy_perry\ChainedToTheRhythm.mp3</SOUND2>
+		<SOUND3N>Swish</SOUND3N>
+		<SOUND3>track\katy_perry\Swish.mp3</SOUND3>
 	</ARTIST>
 	<ARTIST>
 		<NAME>Name : The Chainsmokers</NAME>
@@ -56,8 +71,11 @@
 		<YEAR>Year : 2017</YEAR>
 		<GENRE>Genre : Pop</GENRE>
 		<LABELS>Labels : Disruptor, Columbia</LABELS>
-		<SOUND1>track\chainsmokers\Closer ft. Halsey.mp3</SOUND1>
+		<SOUND1N>Closer</SOUND1N>
+		<SOUND1>track\chainsmokers\Closer.mp3</SOUND1>
+		<SOUND2N>Paris</SOUND2N>
 		<SOUND2>track\chainsmokers\Paris.mp3</SOUND2>
-		<SOUND3>track\chainsmokers\Something Just Like This ft. Coldplay.mp3</SOUND3>
+		<SOUND3N>Something Just Like This</SOUND3N>
+		<SOUND3>track\chainsmokers\SomethingJustLikeThis.mp3</SOUND3>
 	</ARTIST>
 </CATALOG>

@@ -118,6 +118,9 @@
 			    <p id="content0-2">TEST0</p>
 			    <p id="content0-3">TEST0</p>
 			    <p id="content0-4">TEST0</p>
+			    <span id="content0-5">TEST0</span>
+			    <span id="content0-6">TEST0</span>
+			    <span id="content0-7">TEST0</span>
 			  	</div>
 
 			</div>		
@@ -133,6 +136,9 @@
 			    <p id="content1-2">TEST0</p>
 			    <p id="content1-3">TEST0</p>
 			    <p id="content1-4">TEST0</p>
+			    <span id="content1-5">TEST0</span>
+			    <span id="content1-6">TEST0</span>
+			    <span id="content1-7">TEST0</span>
 			  	</div>
 
 			</div>		
@@ -148,6 +154,9 @@
 			    <p id="content2-2">TEST0</p>
 			    <p id="content2-3">TEST0</p>
 			    <p id="content2-4">TEST0</p>
+			    <span id="content2-5">TEST0</span>
+			    <span id="content2-6">TEST0</span>
+			    <span id="content2-7">TEST0</span>
 			  	</div>
 
 			</div>		
@@ -163,6 +172,9 @@
 			    <p id="content3-2">TEST0</p>
 			    <p id="content3-3">TEST0</p>
 			    <p id="content3-4">TEST0</p>
+			    <span id="content3-5">TEST0</span>
+			    <span id="content3-6">TEST0</span>
+			    <span id="content3-7">TEST0</span>
 			  	</div>
 
 			</div>		
@@ -178,6 +190,9 @@
 			    <p id="content4-2">TEST0</p>
 			    <p id="content4-3">TEST0</p>
 			    <p id="content4-4">TEST0</p>
+			    <span id="content4-5">TEST0</span>
+			    <span id="content4-6">TEST0</span>
+			    <span id="content4-7">TEST0</span>
 			  	</div>
 
 			</div>		
@@ -193,6 +208,9 @@
 			    <p id="content5-2">TEST0</p>
 			    <p id="content5-3">TEST0</p>
 			    <p id="content5-4">TEST0</p>
+			    <span id="content5-5">TEST0</span>
+			    <span id="content5-6">TEST0</span>
+			    <span id="content5-7">TEST0</span>
 			  	</div>
 
 			</div>		
@@ -224,7 +242,10 @@
 		    document.getElementById("content"+i+"-1").innerHTML = x[o].getElementsByTagName("ALBUM")[0].childNodes[0].nodeValue;
 		    document.getElementById("content"+i+"-2").innerHTML = x[o].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
 		    document.getElementById("content"+i+"-3").innerHTML = x[o].getElementsByTagName("GENRE")[0].childNodes[0].nodeValue;
-		    document.getElementById("content"+i+"-4").innerHTML = x[o].getElementsByTagName("LABELS")[0].childNodes[0].nodeValue;  
+		    document.getElementById("content"+i+"-4").innerHTML = x[o].getElementsByTagName("LABELS")[0].childNodes[0].nodeValue+"<hr>";  
+		    document.getElementById("content"+i+"-5").innerHTML = "<p>"+x[o].getElementsByTagName("SOUND1N")[0].childNodes[0].nodeValue+"</p><audio controls><source src="+x[o].getElementsByTagName("SOUND1")[0].childNodes[0].nodeValue+" type='audio/mpeg'></audio>";
+		    document.getElementById("content"+i+"-6").innerHTML = "<p>"+x[o].getElementsByTagName("SOUND2N")[0].childNodes[0].nodeValue+"</p><audio controls><source src="+x[o].getElementsByTagName("SOUND2")[0].childNodes[0].nodeValue+" type='audio/mpeg'></audio>";
+		     document.getElementById("content"+i+"-7").innerHTML = "<p>"+x[o].getElementsByTagName("SOUND3N")[0].childNodes[0].nodeValue+"</p><audio controls><source src="+x[o].getElementsByTagName("SOUND3")[0].childNodes[0].nodeValue+" type='audio/mpeg'></audio>";  
 		}
 		function test(i){
 
